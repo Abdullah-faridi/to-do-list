@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+    <h1>To-do List</h1>
+    </header>
+    <div class ="main">
+    <div class="side">
+     <button id="add-task">Add Task</button>
+    </div>
+    <div class = "task-section">
+    <h2>Tasks</h2>
+    <div class="container">
+    </div>
+</div>
+</div>
+     <dialog id="task-dialog">
+        <form method="dialog" class="form-container">
+            <label for="title">Task Title</label>
+            <input type="text" id="title" class="input"/>
+
+            <label for="description">Task Description</label>
+            <textarea id="description"  name="description" rows="4" cols="30" placeholder="enter description here"></textarea>
+             
+            <label for="due-date">Due Date</label>
+            <input type="date" id="due-date" name="due-date" class="input">
+
+            <label for="priority">Priority</label>
+              <select id="priority" name="priority" class="input">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <div class="btns">
+             <button id="confirm">Confirm</button>
+             <button id="cancel">Cancel</button>
+            </div>
+        </form>
+     </dialog>
+
+     
+     
+    
+</body>
+</html>
